@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    height:500px;
+    height: 500px;
     max-width: 800px;
     text-align: center;
     margin: 50px auto;
@@ -16,9 +16,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .game-container {
-    height:850px;
-    max-width:1000px;
+    height: 850px;
+    max-width: 1000px;
     text-align: center;
     margin: 50px auto;
     padding: 20px;
@@ -26,39 +27,52 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .snake-image {
-    width: 50px; /* Set the width of the snake image */
-    height: 50px; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Add margin for spacing */
-    border: 2px solid black; /* Add a border around the image */
-    border-radius: 10px; /* Add border radius for rounded corners */
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 h1 {
     font-size: 50px;
     text-align: center;
-    color:black;
+    color: black;
     font-weight: 800;
-    -webkit-text-stroke: 3px white; 
+    -webkit-text-stroke: 3px white;
 }
+
 .input-section {
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 input[type="text"] {
-    display: block; 
-    width: 50%; 
+    display: block;
+    width: 50%;
     padding: 5px 10px;
-    margin: 5px auto; 
+    margin: 5px auto;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
 button {
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: rgb(140, 140, 198);
+}
+
 /* Music toggle button styles */
 .music-toggle {
     text-align: center;
@@ -80,25 +94,25 @@ button {
 #music-icon:hover {
     opacity: 0.7;
 }
+
 .button-container {
-    display: flex; /* Use flexbox to make the buttons align horizontally */
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Center the buttons vertically */
-    margin-top: 20px; /* Add margin to separate from the game board */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .button-container button {
     background: none;
     border: none;
     cursor: pointer;
-    margin: 0 10px; /* Add margin between buttons */
+    margin: 0 10px;
 }
 
 .button-container button img {
-    width: 40px; /* Adjust the size as needed */
-    height: 40px; /* Adjust the size as needed */
+    width: 40px;
+    height: 40px;
 }
-
 
 /* Game Board Styles */
 .game-board-container {
@@ -129,29 +143,4 @@ button {
 
 .message {
     margin-bottom: 10px;
-}
-
-/* Input Section Styles */
-.input-section {
-    text-align: center;
-}
-
-input[type="text"] {
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color:rgb(140, 140, 198);
 }
