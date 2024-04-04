@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+   
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game</h1>
+        <div class="game-board-container">
+            <canvas class="game-board"></canvas>
+        </div>
+        <div class="score">
+            Score: <span id="score">0</span>
+        </div>
+        <div class="game-over-screen">
+            <div class="message" id="message"></div>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+        <div class="button-container">
+            <div class="music-toggle">
+                <button id="music-toggle-btn">
+                    <img id="music-icon" src="assets/speaker.png" alt="Music Icon">
+                </button>
+            </div>
+            <div class="button-container">
+                <button id="pause-btn">
+                    <img src="assets/pause-button.png" alt="Pause">
+                </button>
+                <button id="play-btn">
+                    <img src="assets/play.png" alt="Play">
+                </button>
+            </div>    
+        </div>
+    <audio id="game-over-sound" src="assets/gameover.wav"></audio>
+    <audio id="background-audio" src="assets/background.mp3" loop autoplay></audio>
+    <script src="app.js"></script>
+</body>
+</html>
